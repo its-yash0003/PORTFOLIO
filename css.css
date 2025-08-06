@@ -769,6 +769,10 @@ section.active {
     margin-left: 1.5rem;
 }
 
+.contact{
+    overflow: visible !important;
+}
+
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1.3fr;
