@@ -146,7 +146,10 @@
         <button class="resume-btn">Education</button>
         <button class="resume-btn">skills</button>
         <button class="resume-btn">About Me</button>
+        <button class="resume-btn">GitHub </button>
+        <button class="resume-btn">Leetcode</button>
       </div>
+     
       <div class="resume-box ">
         <div class="resume-detail Experience active">
           <h2 class="heading">My <span>Experience</span></h2>
@@ -154,7 +157,7 @@
             strong technical skills and teamwork while delivering impactful results.</p>
           <div class="resume-list">
             <div class="resume-item">
-              <p class="year">08/2028 - 09/2025</p>
+              <p class="year">08/2025 - 09/2025</p>
               <h3>IP Intern</h3>
               <p class="company"> CGPDTM, New Delhi — Govt of India</p>
               <p>Gained hands-on experience in IPR and patent processes at CGPDTM.</p>
@@ -191,10 +194,6 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dignissimos.</p>
             </div> -->
           </div>
-
-
-
-
         </div>
 
 
@@ -343,6 +342,19 @@
             </div>
           </div>
         </div>
+
+        <div class="resume-detail calendar">
+           <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+
+        <div class="resume-detail LeetCode">
+            <h2 class="heading">LeetCode <span>Stats</span></h2>
+            <img 
+              src="https://leetcard.jacoblin.cool/its_yash0003?theme=dark&font=Actor&ext=heatmap" 
+              alt="LeetCode Stats"
+              style="max-width: 100%; height: auto;" />
+          </div>
       </div>
     </div>
   </section>
@@ -571,6 +583,19 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- custom js -->
   <script src="js.js"></script>
+<script>
+    GitHubCalendar(".calendar", "its-yash0003");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "its-yash0003", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "its-yash0003", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${username}`)
+       }
+    }).then(r => r.text())
+</script>
 </body>
 
 </html>
