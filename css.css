@@ -946,7 +946,7 @@ div.float-right {
     text-align: right;
     padding: 0 14px 10px 0;
     display: inline-block;
-    float: right;
+    float: none;
 }
 
 div.float-right div {
