@@ -151,7 +151,7 @@
         <button class="resume-btn">GitHub </button>
         <button class="resume-btn">Leetcode</button>
       </div>
-     
+
       <div class="resume-box ">
         <div class="resume-detail Experience active">
           <h2 class="heading">My <span>Experience</span></h2>
@@ -345,18 +345,24 @@
           </div>
         </div>
 
-        <div class="resume-detail calendar">
-           <!-- Loading stuff -->
-            Loading the data just for you.
+        <div class="resume-detail GitHub calendar">
+          <h2 class="heading">My <span>GitHub</span></h2>
+          <p class="desc">I’ve integrated my GitHub contribution graph to highlight my consistent development activity,
+            showcasing collaboration, project contributions, and continuous learning through real-world coding and
+            open-source engagement.
+          </p>
+           Loading the data just for you.
         </div>
 
         <div class="resume-detail LeetCode">
-            <h2 class="heading">LeetCode <span>Stats</span></h2>
-            <img 
-              src="https://leetcard.jacoblin.cool/its_yash0003?theme=dark&font=Actor&ext=heatmap" 
-              alt="LeetCode Stats"
-              style="max-width: 100%; height: auto;" />
-          </div>
+          <h2 class="heading">My LeetCode <span>Stats</span></h2>
+          <p class="desc">I’ve integrated a dynamic LeetCode graph to showcase my consistent problem-solving journey,
+            highlighting my dedication to mastering data structures, algorithms, and logical thinking through continuous
+            coding practice and real-world challenges.
+          </p>
+          <img src="https://leetcard.jacoblin.cool/its_yash0003?theme=dark&font=Actor&ext=heatmap" alt="LeetCode Stats"
+            style="max-width: 100%; height: auto;" />
+        </div>
       </div>
     </div>
   </section>
@@ -448,7 +454,7 @@
                 Repository</span></a>
           </div>
         </div>
-       <div class="portfolio-detail ">
+        <div class="portfolio-detail ">
           <p class="numb">05</p>
           <h3>Login-Authentication</h3>
           <p>A login-authentication system ensures secure access to user accounts by verifying credentials. It typically
@@ -468,19 +474,23 @@
                 Repository</span></a>
           </div>
         </div>
-        
+
         <div class="portfolio-detail ">
           <p class="numb">06</p>
           <h3>Giant-Clock</h3>
-          <p>A giant clock visually displays the current time in real-time, offering an engaging and dynamic user experience. It features smooth updates for hours, minutes, and seconds, with a bold and responsive design that makes time easily readable and interactive across various screen sizes.</p>
+          <p>A giant clock visually displays the current time in real-time, offering an engaging and dynamic user
+            experience. It features smooth updates for hours, minutes, and seconds, with a bold and responsive design
+            that makes time easily readable and interactive across various screen sizes.</p>
 
           <div class="tech">
             <p>HTML5, CSS3, JavaScript</p>
           </div>
 
           <div class="live-github">
-            <a href="https://giant-clock.vercel.app/" target="_blank"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-            <a href="https://github.com/its-yash0003/Giant-Clock" target="_blank"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+            <a href="https://giant-clock.vercel.app/" target="_blank"><i class='bx bx-arrow-back'></i><span>Live
+                Project</span></a>
+            <a href="https://github.com/its-yash0003/Giant-Clock" target="_blank"><i
+                class='bx bxl-github'></i><span>Github Repository</span></a>
           </div>
         </div>
       </div>
@@ -564,9 +574,11 @@
 
             <input id="fullname" type="text" name="name" placeholder="Full Name" required>
 
-            <input id="email" type="email" name="email" placeholder="Email Address" pattern="[a-zA-Z0-9._%+-]+@gmail\.com$"  required>
+            <input id="email" type="email" name="email" placeholder="Email Address"
+              pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" required>
 
-            <input id="phone" type="text" name="phone" placeholder="Phone Number" pattern="\d{10}" title="Enter a 10-digit phone number" required>
+            <input id="phone" type="text" name="phone" placeholder="Phone Number" pattern="\d{10}"
+              title="Enter a 10-digit phone number" required>
 
             <input id="subject" type="text" name="subject" placeholder="Email Subject" required>
 
@@ -585,7 +597,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- custom js -->
   <script src="js.js"></script>
-<script>
+  <script>
     GitHubCalendar(".calendar", "its-yash0003");
 
     // or enable responsive functionality:
@@ -593,11 +605,11 @@
 
     // Use a proxy
     GitHubCalendar(".calendar", "its-yash0003", {
-       proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=${username}`)
-       }
+      proxy(username) {
+        return fetch(`https://your-proxy.com/github?user=${username}`)
+      }
     }).then(r => r.text())
-</script>
+  </script>
 </body>
 
 </html>
