@@ -758,10 +758,10 @@ section.active {
     cursor: pointer;
 }
 
-.portfolio-box .navigation button.disabled {
+/* .portfolio-box .navigation button.disabled {
     color: var(--disabled-color);
     border-color: var(--disabled-color);
-}
+} */
 
 .portfolio-box .navigation button:hover {
     box-shadow: 0 0 3rem var(--main-color);
@@ -1108,9 +1108,6 @@ text.ContributionCalendar-label {
     }
 }
 
-.GitHub {
-    /* margin-top: 50vh; */
-}
 
 /* leetCode */
 .leetCode {
